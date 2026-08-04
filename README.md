@@ -1,15 +1,27 @@
-# Mathematical Reconstruction, Rigidity, and Exceptional Finite Geometry
+# Reconstruction and Rigidity in Finite Geometry, Coding, and Quantum Information
 
-This repository is the public entry point to my current mathematical research.
-It links each available manuscript and its source repository, gives a
-plain-language account of the results, and records how computational and formal
-claims can be checked.
+This is a summary of my current AI-accelerated research in finite
+geometry, coding theory, and quantum information.
 
-> **Start here.** This is a snapshot of a research programme in finite
-> geometry, coding theory, and quantum information. The table below is the
-> quickest map of the results. The paper guide explains why each one may
-> matter, and the verification section explains what “checked” means in each
-> case.
+- [top 11 results](#top-11-standout-results)
+- [paper abstracts, links, and guides](#non-specialist-guide-to-the-papers) 
+- [trust and verification map](#trust-and-verification)
+
+The papers ask a common inverse question: how much of a mathematical object can
+be recovered after most of the original information has been discarded?  The
+remaining data may be the errors farthest from a code, the minimum-weight words
+of another code, the local symmetries of an entangled state, or measurements
+that hide an optical device's orientation.
+
+Across the collection, sparse combinatorial, coding-theoretic, or symmetry data
+repeatedly determine unexpectedly rich algebraic or geometric structure. The
+recurring mechanism is rigidity: find an invariant that survives the loss of
+information, then prove that few possibilities remain. 
+
+The papers are intended to be read independently. They share ideas and
+occasionally cite one another, but each is written to stand on its own
+mathematically; no reader needs to work through the full collection before
+approaching an individual paper.
 
 > **Evidence and verification.** Every paper in the programme is being brought
 > to a common audit standard: an exact inventory of its theorem-like statements
@@ -24,58 +36,25 @@ claims can be checked.
 > Lean checks and what remains a manuscript or computational argument. The
 > same tooling and audit standard are used across the full collection, with
 > each paper's release surface recording its current completion status. The
-> immediate target for this week is to bring every paper to the level already
+> immediate target is to bring every paper to the level already
 > demonstrated by Papers I and II.
 
-> **How the work was produced.** This is a human-directed, substantially
-> AI-generated research programme. AI systems performed much of the searching,
-> proof development, drafting, coding, formalization, and internal review; I
-> selected and directed the work and accept responsibility for the released
-> claims. A separate research-method note gives further context. None of that
-> internal process substitutes for independent specialist review.
+## A request for help
 
-> **A request for help.** I am an independent researcher with no institutional
-> affiliation. Much of this work crosses fields in which I do not have formal
-> training. I have worked hard to check the literature, but I need specialists
-> to help me avoid claiming results that are already classical, and to identify
-> important citations or technical mistakes that I have missed. I am also looking for
-> appropriate experts who would be willing, after evaluating the relevant
-> manuscripts, to endorse suitable submissions for release as arXiv preprints.
-> An endorsement would not be a request to vouch for work unread or replace
-> peer review; it would be informed support for making the papers available for
-> public scrutiny. If you work in one of these areas and can help with either
-> the literature audit or the arXiv process, I would be grateful to hear from
-> you via [my GitHub profile](https://github.com/tavisrudd).
-
-The papers ask a common inverse question: how much of a mathematical object can
-be recovered after most of the original information has been discarded?  The
-remaining data may be the errors farthest from a code, the minimum-weight words
-of another code, the local symmetries of an entangled state, or measurements
-that hide an optical device's orientation.
-
-Concrete results include:
-
-- a reconstruction of the exceptional Clebsch code from its deep-hole syndrome
-  locus, including its projective geometry, stabilizer, and golden orientation;
-- exact classifications of projective Reed–Solomon deep holes at redundancies
-  five and six for every prime power at least seven, with further exact ranges
-  through redundancy ten; and
-- an exact local-unitary rigidity theorem for stabilizer absolutely maximally
-  entangled states, together with a quantitative theorem for approximate
-  symmetries.
-
-Across the collection, sparse combinatorial, coding-theoretic, or symmetry data
-repeatedly determine unexpectedly rich algebraic or geometric structure. The
-recurring mechanism is rigidity: find an invariant that survives the loss of
-information, then prove that few possibilities remain. Specialists can go
-straight to the linked repositories; other readers may prefer the
-[paper guide](#non-specialist-guide-to-the-papers), the
-[trust and verification map](#trust-and-verification).
-
-The papers are intended to be read independently. They share ideas and
-occasionally cite one another, but each is written to stand on its own
-mathematically; no reader needs to work through the full collection before
-approaching an individual paper.
+I am an independent researcher with no institutional affiliation. Much
+of this work crosses fields in which I do not have formal training. I
+have worked hard to check the literature, but I need specialists to
+help me avoid claiming results that are already classical, and to
+identify important citations or technical mistakes that I have
+missed. I am also looking for appropriate experts who would be
+willing, after evaluating the relevant manuscripts, to endorse
+suitable submissions for release as arXiv preprints.  An endorsement
+would not be a request to vouch for work unread or replace peer
+review; it would be informed support for making the papers available
+for public scrutiny. If you work in one of these areas and can help
+with either the literature audit or the arXiv process, I would be
+grateful to hear from you via [my GitHub
+profile](https://github.com/tavisrudd).
 
 ## Top 11 standout results
 
@@ -105,52 +84,6 @@ or computational volume. Each headline is linked to the paper's public PDF.
 10. **The rational twist in Hitchin's harmonic-cubic incidence cover is √(5J₀).** The paper identifies the marked degree-two function-field extension and shows that the associated oriented cubic has equivalent descriptions through holonomy, exterior algebra, Pfaffians, and determinants. [Golden Descent and Operator Realizations of the Clebsch Cubic](https://github.com/tavisrudd/clebsch-passages/blob/main/clebsch_passages.pdf).
 
 11. **Order six is the unique nontrivial symmetric conference order with cut-independent balanced exchange spectrum.** The paper proves the uniqueness theorem and derives corresponding extremality and stability statements for the golden six-mode interferometer model. [Exchange Landscapes, Orientation, and Rigidity in the Golden Six-Mode Conference Interferometer](https://github.com/tavisrudd/golden-quantum-statistics/blob/main/golden_quantum_statistics.pdf).
-
-## Public snapshot
-
-This table is a snapshot as of **August 3, 2026**.  Here **Released** means that
-a public manuscript and source repository are available; it does not imply
-journal publication or peer review.  **In preparation** means that the title,
-statement, and counts may still change.  Clebsch V is included in the program's
-paper count but has no page or theorem counts.
-
-**Field legend:** FG = Finite Geometry; CT = Coding Theory; AC = Algebraic
-Combinatorics; COMB = Combinatorics; AG = Algebraic Geometry; CGT =
-Combinatorial Game Theory; GT = Group Theory; QI = Quantum Information; QO =
-Quantum Optics; MP = Mathematical Physics; IT = Invariant Theory; NT = Number
-Theory; CM = Computational Mathematics.
-
-| Group / paper | Fields | Status | Pages | Theorems | Lemmas | Theorem + lemma |
-|---|---|---|---:|---:|---:|---:|
-| **Clebsch Series** |  |  |  |  |  |  |
-| *I* — [Reconstructing the Clebsch Code and Its Golden Orientation from Its Deep-Hole Syndrome Locus](https://github.com/tavisrudd/clebsch-rigidity/blob/main/clebsch_rigidity.pdf) | FG; CT | Released | 22 | 11 | 2 | 13 |
-| *II* — [Quadratic Trade Rigidity and Cubic Orientation in Conic Matching Quotients](https://github.com/tavisrudd/clebsch-factorization/blob/main/clebsch_factorization.pdf) | FG; AC | Released | 43 | 7 | 7 | 14 |
-| *III* — [Golden Descent and Operator Realizations of the Clebsch Cubic](https://github.com/tavisrudd/clebsch-passages/blob/main/clebsch_passages.pdf) | FG; AG; IT; MP | Released | 27 | 5 | 0 | 5 |
-| *IV* — [*Minimum-Word Reconstruction of PG(2,13) from a Binary Conic Code*](https://github.com/tavisrudd/q13-passant-code/blob/main/passant_code_q13.pdf) | CT; FG | Released | 11 | 1 | 0 | 1 |
-| *V* — *Forthcoming Clebsch paper* | FG; CT | In preparation; no counts yet | — | — | — | — |
-| **Clebsch Series subtotal** |  | 5 papers listed; 4 counted | **103** | **24** | **9** | **33** |
-| [Computational Strengthenings of Clebsch Syndrome Rigidity](https://github.com/tavisrudd/clebsch-rigidity/blob/main/clebsch_rigidity_computational_companion.pdf) — companion | CM; FG | Repository available; housed with Paper I | 7 | 7 | 1 | 8 |
-| [Arcs Complete Outside a Conic: A Prescribed-Hole Defect Identity and Matching-Design Rigidity](https://github.com/tavisrudd/arcs-complete-outside-conic/blob/main/arcs_complete_outside_conic.pdf) | FG; COMB | Released | 26 | 8 | 4 | 12 |
-| [Deep Holes of Projective Reed–Solomon Codes Beyond Redundancy Four: Recursive Carriers and Exact Classifications Through Redundancy Ten](https://github.com/tavisrudd/beyond4-prs/blob/main/prs-beyond-redundancy-four.pdf) | CT; FG; NT | Released | 56 | 13 | 14 | 27 |
-| [Local-Unitary Rigidity and Quantitative Rounding for Stabilizer AME States](https://github.com/tavisrudd/ame-lu/blob/main/ame-lu.pdf) | QI; CT | Released | 35 | 10 | 14 | 24 |
-| [Diagonal Isoduality and Transversal Clifford Groups of MDS–CSS Codes](https://github.com/tavisrudd/mds-css-transversal-groups/blob/main/mds-css-transversal-groups.pdf) | QI; CT; FG | Released | 22 | 7 | 4 | 11 |
-| [Exchange Landscapes, Orientation, and Rigidity in the Golden Six-Mode Conference Interferometer](https://github.com/tavisrudd/golden-quantum-statistics/blob/main/golden_quantum_statistics.pdf) | QO; MP; IT | Released | 16 | 6 | 0 | 6 |
-| **In Preparation — Geometry and Coding** |  |  |  |  |  |  |
-| └─ *Complete Bounded Repair Ports: Transfer, Reliability, and Geometric Structure* | CT; FG | In preparation | ~14 | ~6 | ~0 | ~6 |
-| └─ *Frobenius-Equivariant Pair Extension and Robust Repair of Eight-Arcs* | FG; CT | In preparation | ~14 | ~4 | ~2 | ~6 |
-| **In Preparation — Combinatorial Game Theory** |  |  |  |  |  |  |
-| └─ *Node Kayles on Conic Schreier Graphs: Dihedral and Polyhedral Templates* | CGT; FG; GT | In preparation | ~19 | ~15 | ~4 | ~19 |
-| └─ *Outcome Classes of Cap/Nofil Games on Finite Geometries* | CGT; FG | In preparation | ~14 | ~3 | ~10 | ~13 |
-| **Released manuscript total** |  | **9 released main papers + 1 companion** | **265 counted pages** | **75 theorems** | **46 lemmas** | **121 theorem + lemma statements** |
-| **Entire listed program** |  | **14 main papers + 1 companion; V excluded from numerical estimates** | **~326 pages** | **~103 theorems** | **~62 lemmas** | **~165 theorem + lemma statements** |
-
-The page totals are compiled-PDF page counts for the public snapshot.  The
-theorem and lemma columns count authored `theorem` and `lemma` environments in
-the manuscript sources; propositions, corollaries, definitions, remarks, and
-cited results are not included.  Counts prefixed with `~` are rough current
-manuscript estimates for papers in preparation.  They are excluded from the
-released-manuscript total and included in the estimated program total.
-Clebsch V has no numerical estimate.
 
 ## Non-specialist guide to the papers
 
@@ -429,14 +362,39 @@ meaningful signatures, including a quantitative measure of departure from the
 real switching class.
 
 ---
+## Use of AI
+
+This project was developed with extensive assistance from OpenAI Codex
+and Anthropic Claude. Under my direction, the systems assisted
+throughout with proof exploration, literature research, symbolic and
+finite computation, code and formal-proof development, verification,
+and manuscript drafting and revision. I checked the resulting
+arguments, computations, code, and cited sources, reviewed and edited
+AI-assisted material, and assume responsibility for all content.
+
+I was directly involved in every research/agent session. There were no
+autonomous loops.  The models supplied most of the volume of work.  I
+coordinated, pushed, and supplied some mathematical taste and
+ambition.  I selected targets, chose which branches to deepen or kill,
+maintained the definitions and conceptual links across subjects, and
+decided what could enter a paper.  My often naive questions exposed a
+hidden assumptions and unlocked potential gems the agents were going
+to move past.
 
 ## Trust and verification
 
-Every mathematical claim is assigned an evidence type:
+I've been very careful with the internal evidence chain and research
+methodology but none of that internal process substitutes for
+independent specialist review. To make the reviewer's job easier every
+paper and every claim comes with automatically generated and audited
+"trust metadata".
 
-1. an ordinary mathematical proof;
+Every mathematical claim is tracked in a 'trust ledger' and assigned
+a set of evidence types:
+
+1. an ordinary prose mathematical proof;
 2. a cited result, checked against its hypotheses and conventions;
-3. a kernel-checked formal proof;
+3. a lean kernel-checked formal proof;
 4. a certificate-checked finite computation; or
 5. a trusted program execution or symbolic experiment.
 
@@ -446,6 +404,10 @@ the reported output without proving that the search domain was complete.  Lean
 may check a formal statement without establishing that it matches the prose
 claim.  Each repository therefore states its own evidence boundary rather than
 using “computer-verified” or “verified in Lean” as a blanket assurance.
+
+I strived have strived to back as many claims as possible with fully
+kernel-checked Lean 4 structural proofs. Computation and certificates
+were used heavily for discovery and then retired as soon as possible.
 
 For specialists who want to audit a claim, these are the useful entry points:
 
@@ -467,23 +429,9 @@ command, expected output, and hashes.  It includes an independent replay or
 states why one is unavailable.  A negative result says “nothing was found in
 this exhausted domain,” not “nothing exists” without a further argument.
 
-The shared [`finitegeom`](https://github.com/tavisrudd/finitegeom) development
-currently contains 300 Lean files and 83,122 Lean lines.  This is a lower bound:
-new paper material is not all exported, and generated certificates live in
-separate repositories.  It measures the scale of the formal record, not the
-coverage of any particular theorem; the paper-level maps above are the relevant
+The shared [`finitegeom`](https://github.com/tavisrudd/finitegeom)
+repository currently contains > 300 Lean files and 83K Lean
+lines. Generated certificates live in separate repositories.  It
+measures the scale of the formal record, not the coverage of any
+particular theorem; the paper-level maps above are the relevant
 coverage claims.
-
-Review is deliberately separated from discovery where possible.  Fresh
-sessions are asked to reconstruct claims without the original framing,
-computations are replayed from recorded inputs, search instruments are tested
-on known-positive controls, and proof routes are attacked with counterexamples
-and alternate methods.  A fresh model review is useful adversarial review, not
-external peer review.  The table's release status makes no claim of the latter.
-
-The literature process has also corrected the program.  An early reading of
-part of the Clebsch geometry as new did not survive a primary-source audit:
-work of R. H. Dye already contained that geometry.  The claim was narrowed and
-the manuscripts credit the prior work, leaving the coding and reconstruction
-results to stand on their own.  This is the correction process the audit is
-meant to produce.

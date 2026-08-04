@@ -400,6 +400,52 @@ The plotting script records the fallback rules for the small number of rows
 without a provider usage record, so the figures can be regenerated as the
 project grows.
 
+## Paper stats snapshot
+
+This table is a snapshot as of **August 3, 2026**.  Here **Released** means that
+a public manuscript and source repository are available; it does not imply
+journal publication or peer review.  **In preparation** means that the title,
+statement, and counts may still change.  Clebsch V is included in the program's
+paper count but has no page or theorem counts.
+
+**Field legend:** FG = Finite Geometry; CT = Coding Theory; AC = Algebraic
+Combinatorics; COMB = Combinatorics; AG = Algebraic Geometry; CGT =
+Combinatorial Game Theory; GT = Group Theory; QI = Quantum Information; QO =
+Quantum Optics; MP = Mathematical Physics; IT = Invariant Theory; NT = Number
+Theory; CM = Computational Mathematics.
+
+| Group / paper | Fields | Status | Pages | Theorems | Lemmas | Theorem + lemma |
+|---|---|---|---:|---:|---:|---:|
+| **Clebsch Series** |  |  |  |  |  |  |
+| *I* — [Reconstructing the Clebsch Code and Its Golden Orientation from Its Deep-Hole Syndrome Locus](https://github.com/tavisrudd/clebsch-rigidity/blob/main/clebsch_rigidity.pdf) | FG; CT | Released | 22 | 11 | 2 | 13 |
+| *II* — [Quadratic Trade Rigidity and Cubic Orientation in Conic Matching Quotients](https://github.com/tavisrudd/clebsch-factorization/blob/main/clebsch_factorization.pdf) | FG; AC | Released | 43 | 7 | 7 | 14 |
+| *III* — [Golden Descent and Operator Realizations of the Clebsch Cubic](https://github.com/tavisrudd/clebsch-passages/blob/main/clebsch_passages.pdf) | FG; AG; IT; MP | Released | 27 | 5 | 0 | 5 |
+| *IV* — [*Minimum-Word Reconstruction of PG(2,13) from a Binary Conic Code*](https://github.com/tavisrudd/q13-passant-code/blob/main/passant_code_q13.pdf) | CT; FG | Released | 11 | 1 | 0 | 1 |
+| *V* — *Forthcoming Clebsch paper* | FG; CT | In preparation; no counts yet | — | — | — | — |
+| **Clebsch Series subtotal** |  | 5 papers listed; 4 counted | **103** | **24** | **9** | **33** |
+| [Computational Strengthenings of Clebsch Syndrome Rigidity](https://github.com/tavisrudd/clebsch-rigidity/blob/main/clebsch_rigidity_computational_companion.pdf) — companion | CM; FG | Repository available; housed with Paper I | 7 | 7 | 1 | 8 |
+| [Arcs Complete Outside a Conic: A Prescribed-Hole Defect Identity and Matching-Design Rigidity](https://github.com/tavisrudd/arcs-complete-outside-conic/blob/main/arcs_complete_outside_conic.pdf) | FG; COMB | Released | 26 | 8 | 4 | 12 |
+| [Deep Holes of Projective Reed–Solomon Codes Beyond Redundancy Four: Recursive Carriers and Exact Classifications Through Redundancy Ten](https://github.com/tavisrudd/beyond4-prs/blob/main/prs-beyond-redundancy-four.pdf) | CT; FG; NT | Released | 56 | 13 | 14 | 27 |
+| [Local-Unitary Rigidity and Quantitative Rounding for Stabilizer AME States](https://github.com/tavisrudd/ame-lu/blob/main/ame-lu.pdf) | QI; CT | Released | 35 | 10 | 14 | 24 |
+| [Diagonal Isoduality and Transversal Clifford Groups of MDS–CSS Codes](https://github.com/tavisrudd/mds-css-transversal-groups/blob/main/mds-css-transversal-groups.pdf) | QI; CT; FG | Released | 22 | 7 | 4 | 11 |
+| [Exchange Landscapes, Orientation, and Rigidity in the Golden Six-Mode Conference Interferometer](https://github.com/tavisrudd/golden-quantum-statistics/blob/main/golden_quantum_statistics.pdf) | QO; MP; IT | Released | 16 | 6 | 0 | 6 |
+| **In Preparation — Geometry and Coding** |  |  |  |  |  |  |
+| └─ *Complete Bounded Repair Ports: Transfer, Reliability, and Geometric Structure* | CT; FG | In preparation | ~14 | ~6 | ~0 | ~6 |
+| └─ *Frobenius-Equivariant Pair Extension and Robust Repair of Eight-Arcs* | FG; CT | In preparation | ~14 | ~4 | ~2 | ~6 |
+| **In Preparation — Combinatorial Game Theory** |  |  |  |  |  |  |
+| └─ *Node Kayles on Conic Schreier Graphs: Dihedral and Polyhedral Templates* | CGT; FG; GT | In preparation | ~19 | ~15 | ~4 | ~19 |
+| └─ *Outcome Classes of Cap/Nofil Games on Finite Geometries* | CGT; FG | In preparation | ~14 | ~3 | ~10 | ~13 |
+| **Released manuscript total** |  | **9 released main papers + 1 companion** | **265 counted pages** | **75 theorems** | **46 lemmas** | **121 theorem + lemma statements** |
+| **Entire listed program** |  | **14 main papers + 1 companion; V excluded from numerical estimates** | **~326 pages** | **~103 theorems** | **~62 lemmas** | **~165 theorem + lemma statements** |
+
+The page totals are compiled-PDF page counts for the public snapshot.  The
+theorem and lemma columns count authored `theorem` and `lemma` environments in
+the manuscript sources; propositions, corollaries, definitions, remarks, and
+cited results are not included.  Counts prefixed with `~` are rough current
+manuscript estimates for papers in preparation.  They are excluded from the
+released-manuscript total and included in the estimated program total.
+Clebsch V has no numerical estimate.
+
 ## Nearby AI mathematics, as of August 3, 2026
 
 Recent headlines give useful context for the targeted mode of AI mathematics:
