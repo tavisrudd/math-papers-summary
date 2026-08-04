@@ -85,6 +85,27 @@ or computational volume. Each headline is linked to the paper's public PDF.
 
 11. **Order six is the unique nontrivial symmetric conference order with cut-independent balanced exchange spectrum.** The paper proves the uniqueness theorem and derives corresponding extremality and stability statements for the golden six-mode interferometer model. [Exchange Landscapes, Orientation, and Rigidity in the Golden Six-Mode Conference Interferometer](https://github.com/tavisrudd/golden-quantum-statistics/blob/main/golden_quantum_statistics.pdf).
 
+## Theorems that quantify over infinite families
+
+Most of the results above are not statements about one distinguished object:
+they range over all field orders, all code lengths, all finite projective
+planes, or all orders of a matrix family, and the exceptional objects appear
+as their answers rather than as their hypotheses.  The table records, for each
+released paper, a theorem of that kind together with the exact range it covers.
+
+| Paper                              | General theorem                                                                                              | Quantifier range                                                                  |
+|------------------------------------|--------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------|
+| Clebsch I                          | An arc whose uncovered locus is a nonsingular conic obeys 2k − 3 ≤ q ≤ (k(k − 1) + 3)/3, with q odd          | every k-arc, over every field order q                                             |
+| Clebsch I companion                | q = 11 is the only field order admitting a conic-filling six-arc                                             | every field order q                                                               |
+| Clebsch II                         | The one-dimensional two-valued strength-two trade occurs only for the B₃/F₇ and H₃/F₁₁ orbits                | full PGL₂(q)-orbits of perfect matchings, all odd fields                          |
+| Clebsch III                        | The balanced exchange spectrum is the squared singular spectrum of the cut block                             | every symmetric conference matrix                                                 |
+| Clebsch III                        | Aligned four-sets reconstruct the two-graph up to complement, and seven is sharp                             | every two-graph on at least seven vertices                                        |
+| Arcs complete outside a conic      | The first two secant moments give an exact defect identity with nonnegative remainder                        | every finite projective plane, every prescribed hole set H                        |
+| Projective Reed–Solomon deep holes | Split-free syndrome directions, and deep holes where the covering-radius gate applies, are classified        | every q ≥ 7 at redundancies five to seven; explicit ranges through redundancy ten |
+| Stabilizer AME rigidity            | Every product-unitary intertwiner between stabilizer AME(2m,q) states is Clifford on each party              | every prime power q = pᵉ and every m ≥ 2                                          |
+| MDS–CSS transversal groups         | The diagonal multiplier space has dimension zero or one, and its nullity fixes the transversal logical group | every length: all [2m,m,m+1]q MDS codes, group over odd prime fields              |
+| Golden six-mode interferometer     | Order six is the unique nontrivial order whose balanced exchange spectrum is cut-independent                 | every symmetric conference order                                                  |
+
 ## Non-specialist guide to the papers
 
 The abstracts below are the papers' own abstract text, with local LaTeX macros
@@ -101,13 +122,15 @@ then read the abstract for the paper's technical statement.
 
 **Standout result.** Deep-hole data recover the non-GRS Clebsch code, its
 conic and polarity, and its golden orientation, including an operator with
-`B² = 5I`.
+`B² = 5I`; and eleven is not an arbitrary choice of field, because a
+Sylvester-graph obstruction in the computational companion shows that q = 11
+is the only field order admitting a conic-filling six-arc at all.
 
-> *Abstract* Let A be a six-arc in PG(2,11), and let U(A) be the projective points lying on no chord of A. For the associated [6,3,4]₁₁ MDS code, U(A) is its projective deep-hole syndrome locus. We prove that U(A) lies on a conic if and only if A is projectively equivalent to the Clebsch hexagon; in that case U(A) is exactly a nonsingular conic. Thus nearest-codeword data reconstruct the non-GRS Clebsch code up to monomial equivalence. The reconstructed conic then determines its polarity, and Dye's theorem identifies the stabilizer as A₅; none of this geometry is assumed.
+> *Abstract* Let A be a six-arc in PG(2,11), and let U(A) be the projective points lying on no chord of A. For the associated [6,3,4]₁₁ MDS code, U(A) is its projective deep-hole syndrome locus. We prove that U(A) lies on a conic if and only if A is projectively equivalent to the Clebsch hexagon; in that case U(A) is exactly a nonsingular conic. Thus nearest-codeword data reconstruct the non-GRS Clebsch code up to monomial equivalence: the projective deep-hole locus is a recognition invariant whose metric boundary data recover the parity-check geometry. The reconstructed conic then determines its polarity, and Dye's theorem identifies the stabilizer as A₅; none of this geometry is assumed.
 >
-> Nearest-codeword ambiguity then reconstructs an unordered orientation torsor on six axes. Its signed orbital operator satisfies B² = 5I, and triangle holonomy gives the support cubic through cᵢⱼₖ = BᵢⱼBⱼₖBₖᵢ; equivalently, this cubic is the sole nonsymmetric term in the diagonal determinant pencil of B. Thus the same syndrome and support data recover both the code and its golden orientation.
+> Nearest-codeword ambiguity then reconstructs an unordered orientation torsor on six axes. Its signed orbital operator satisfies B² = 5I, and triangle holonomy gives the support cubic through cᵢⱼₖ = BᵢⱼBⱼₖBₖᵢ; equivalently, this cubic is the sole nonsymmetric term in the diagonal determinant pencil of B. Thus the same syndrome and support data recover both the code and its golden orientation; coset-leader ambiguity recovers not only incidence and symmetry but the integral quadratic order Z[B] ≃ Z[√5].
 >
-> The proof uses a universal chord-defect identity and a partial-cover bound for rigidity, then decoder ambiguity and the orbital pentagon for orientation. As a secondary uniform consequence, any k-arc whose uncovered locus is a nonsingular conic has q odd and lies in the field window 2k − 3 ≤ q ≤ (k(k − 1) + 3)/3.
+> The proof uses a universal chord-defect identity and a partial-cover bound for rigidity, then decoder ambiguity and the orbital pentagon for orientation. As a secondary uniform consequence, any k-arc whose uncovered locus is a nonsingular conic has q odd, with 2k − 3 ≤ q ≤ (k(k − 1) + 3)/3. Thus for each fixed k, the all-field existence problem reduces to finitely many field orders.
 >
 **Delivers.** The pattern of the errors farthest from every valid codeword
 identifies the code itself and reveals an underlying golden arithmetic
@@ -118,7 +141,12 @@ in inverse problems or in what can be learned from failures.
 
 **Why it matters.** Error-pattern data can expose a code’s underlying geometry
 even when the code is not given directly.  The result turns indirect evidence
-into a complete reconstruction theorem.
+into a complete reconstruction theorem, and it is not confined to one field:
+the same chord-defect argument gives a field window for every k-arc, and the
+companion shows that eleven is the only field order where a conic-filling
+six-arc exists.  The chord-defect identity used here is the special case, for
+one arc in PG(2,q), of the all-planes secant-moment identity proved in Arcs
+Complete Outside a Conic below.
 
 ---
 
@@ -158,9 +186,9 @@ orientation information.
 vertices onward, and only O(n²) selected determinant tests are needed for the
 conference-signing reconstruction.
 
-> *Abstract* We determine the rational twist in Hitchin's degree-two incidence cover over the projective space P(H) of harmonic cubics: its function field is Q(P(H))(√(5J₀)). A complete golden fibre over [xyz] determines the factor 5, while the Clebsch chart satisfies ιₜ*J₀ = 16σ₃². Fixing the marked bridge datum attaches the chosen sign to an order-six conference operator C, with C² = 5I.
+> *Abstract* The rational twist in Hitchin's degree-two incidence cover over the projective space P(H) of harmonic cubics is a discriminant rather than a fitted constant. The two conjugate Clebsch charts meet in a nonsplit two-branch singularity whose residue-field pinching has square class [5]; accordingly the cover's function field is Q(P(H))(√(5J₀)). A complete golden fibre over [xyz] evaluates that class, while the Clebsch chart satisfies ιₜ*J₀ = 16σ₃². Fixing the marked bridge datum attaches the chosen sign to an order-six conference operator C, with C² = 5I.
 >
-> Its oriented cubic has four equivalent descriptions: triangle holonomy, the diagonal of ⋆∧³C, a commutator Pfaffian, and a cross-golden determinant. The six outer translates are the signed Joubert coordinates on the Segre cubic; centered squares give the Segre–Igusa polar map, and a coordinate section gives the diagonal Clebsch cubic. Order six is also the unique nontrivial symmetric conference order with cut-independent balanced exchange spectrum. More generally, aligned four-sets reconstruct every two-graph on at least seven vertices up to complement, and seven is sharp. Thus marked determinant-(−3) blocks recover every symmetric conference signing of order at least ten, up to switching and global negation.
+> Its oriented cubic, and likewise each of its six outer translates, is simultaneously a triangle holonomy, the diagonal of ⋆∧³C, a commutator Pfaffian, and a cross-golden determinant. The middle two agree for every symmetric matrix, and the last is a reformulation of the golden splitting; that the triangle holonomy joins them is a property of the conference class rather than a formal identity. The six outer translates are the signed Joubert coordinates on the Segre cubic; centered squares give the Segre–Igusa polar map, and a coordinate section gives the diagonal Clebsch cubic. For every symmetric conference matrix the balanced exchange spectrum is the squared singular spectrum of its cut block, and cut-independence singles out order six. Independently of the golden setting, the four-by-four principal minors of a Seidel matrix determine it up to switching and global negation once there are at least seven vertices, where seven is sharp; equivalently, aligned four-sets reconstruct every two-graph up to complement. Thus marked determinant-(−3) blocks recover every symmetric conference signing of order at least ten, by a decoder using quadratically many selected determinants.
 >
 > These sign comparisons are relative to the marked datum, not an identification of the ambient harmonic representations. With the same convention, the Petersen (−2)-eigenspace of coefficient vectors on the ten icosahedral face axes embeds as the Clebsch four-space in degree-six zonal harmonics, and the normalized spherical cubic restricts to the exact multiple −784000σ₃/1247103.
 >
@@ -204,9 +232,13 @@ reconstruction counterpart to the earlier Clebsch recognition work.
 ---
 
 **Further work.** Clebsch V is in preparation as a later addition to the
-series.  It is intended to bring the preceding recognition, orientation, and
-realization results into a more unified picture.  Details will be added when a
-public version is available.
+series.  The current intent is a short paper whose headline is a recognition
+and round-trip statement: constructions defined independently in the earlier
+papers are expected to transport onto a single oriented cubic, and that cubic
+in turn to reconstruct the conference operator and its quadratic spectral
+algebra, up to declared markings.  Its architecture is still open and nothing
+here should be read as a proved theorem or a settled title; details will be
+added when a public version is available.
 
 #### Computational Strengthenings of Clebsch Syndrome Rigidity — companion
 
@@ -254,7 +286,11 @@ gives a general lower bound and settles several small fields exactly.
 projective planes or extremal configurations.
 
 **Why it matters.** A visual covering problem becomes a sharp defect
-calculation, with zero defect forcing rigid exceptional cases.
+calculation, with zero defect forcing rigid exceptional cases.  The
+secant-moment identity proved here, valid in every finite projective plane and
+for every prescribed hole set, is the general form of the chord-defect identity
+that drives the rigidity theorem of Clebsch Paper I above; the Clebsch hexagon
+is one instance of the equality case.
 
 ---
 
@@ -293,9 +329,9 @@ recursive way to organize many field sizes and redundancies.
 states is local Clifford. A quantitative rounding theorem also places
 sufficiently approximate symmetries near exact Clifford symmetries.
 
-> *Abstract* Let q = pᵉ. For every m ≥ 2, each product-unitary intertwiner between two stabilizer AME(2m,q) states is Clifford factor by factor. On any m + 1 parties, the supported stabilizer labels form a q²-element group and project bijectively onto the complete local Weyl basis at every party in the marginal. The reduced operator therefore determines its local Weyl axes intrinsically. Consequently, every tensor-product conversion between the associated [[2m−1,1,m]]q stabilizer quantum-MDS encoders is Clifford on every physical factor and on the logical factor.
+> *Abstract* Let q = pᵉ and m ≥ 2. Every product-unitary intertwiner between two stabilizer AME(2m,q) states is Clifford on each party. The proof recovers the complete local Weyl frame from any (m + 1)-party marginal: the supported stabilizer labels form a q²-element group and project bijectively onto the local Weyl labels. These support bijections also form a minimum-support atlas which classifies local-unitary equivalence up to local symplectic changes of frame. As an encoder consequence, every transversal conversion between the associated [[2m−1,1,m]]q stabilizer codes is Clifford on every physical and logical factor.
 >
-> Discreteness of these symmetry groups needs neither maximal entanglement nor stabilizer structure: every pure state whose two-party marginals are all maximally mixed, at any local dimension, has finite product-unitary symmetry group modulo phase, and the defect of a product unitary grows quadratically away from that group with an explicit ratio constant independent of the number of parties. The certified set is described in generator coordinates: its ℓ¹ radius is governed by the state's uniformity order. For a stabilizer state the exact product-Clifford symmetries are not merely isolated: any product Clifford outside the symmetry group has defect at least (2 − 2p⁻¹ᐟ²)¹ᐟ², a constant of the characteristic alone. Quantitative Clifford rounding and that separation remove compactness from the approximate-symmetry decomposition and give defect-only thresholds. Viewing each party as the logical leg of an [[2m−1,1,m]]q code, a quantitative three-region cleaning argument rounds every local factor at constant error and gives a global threshold of order min{p⁻¹,q⁻¹ᐟ²,m⁻¹ᐟ²}. On the explicit Reed–Solomon AME tower 2m ≤ q + 1, this is of order q⁻¹ over prime fields and q⁻¹ᐟ² at extension degree at least two. This bypasses the exponentially faint minimum-support marginals. Modulo party relabelling and local trace-symplectic Fp-linear changes of frame, the transition atlas obtained by pushing Weyl labels between parties on minimum supports is a complete structured LU invariant.
+> We prove a quantitative counterpart without reading the exponentially small Weyl signal of one marginal. Viewing each party as the logical leg of the associated code, a leakage-aware three-region cleaning argument and Weyl–Fourier concentration round every local factor within 8ε of a Clifford. The uniform stabilizer overlap gap then selects an exact symmetry and gives a defect-only decomposition radius Θ(min{p⁻¹, q⁻¹ᐟ², n⁻¹ᐟ²}), n = 2m, with residual generator norm at most π√q ε. At a dimension-only radius the rounded symplectic maps already satisfy the exact minimum-support atlas. The remaining obstruction is affine: localized commutators cancel the stabilizer-character phases and therefore cannot control the product-Pauli correction. On generalized and extended Reed–Solomon AME families the certified scale is Θ(q⁻¹) over prime fields and Θ(q⁻¹ᐟ²) at extension degree at least two.
 >
 **Delivers.** Exact product-unitary changes between a broad class of highly
 entangled quantum states must come from the code’s discrete symmetry group;
