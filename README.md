@@ -179,6 +179,13 @@ complex as separate victories.
   one. Its nullity determines whether the projective transversal group is
   `Fq² ⋊ SL₂(q)` or the smaller split-torus branch. [Diagonal Isoduality and Transversal Clifford Groups](https://github.com/tavisrudd/mds-css-transversal-groups/blob/main/mds-css-transversal-groups.pdf).
 
+- **Complete bounded repair ports transfer represented local structure.**
+  Support clutters, normalized scalar decoders, and stochastic reliability are
+  treated as three layers of one pointed object. Exact weighted-functional
+  confinement copies a prescribed bounded port into every block, and
+  asymptotically good outer families place it on a positive-density target
+  class. [Complete Bounded Repair Ports](https://github.com/tavisrudd/complete-repair-ports/blob/main/complete_repair_ports.pdf).
+
 - **Order six is the unique nontrivial balanced conference order.** For a
   symmetric conference matrix, split the modes into two equal parts and take
   the singular-value spectrum of the corresponding cut block. Order six is
@@ -197,6 +204,8 @@ is conditional, its hypothesis is displayed in the theorem column.
 
 | Paper | General theorem | Quantifier range |
 |---|---|---|
+| Complete Bounded Repair Ports: Transfer, Reliability, and Geometric Structure | The minimum coefficient port reconstructs the represented code, although its support projection is the generic complete uniform clutter. | Every proper `[n,k]q` MDS code with `1 ≤ k < n`, at every distinguished coordinate. |
+| Complete Bounded Repair Ports: Transfer, Reliability, and Geometric Structure | Exact weighted-functional confinement transfers every represented bounded support and coefficient port below the pointed zero-functional threshold onto a designated positive-density target class. | Every fixed inner encoder and outer family with dual distance tending to infinity; asymptotic goodness follows from the stated classical outer-family inputs. |
 | Integral Cohomology and Modular Decomposition for the Theta Divisor of a Cubic Threefold | The integral middle lattice has rank `130` and saturation quotient `(Z/2)^10`; the integral resolution complex has central Smith factor three, a length-three mod-three Loewy chain, and modular relative-hard-Lefschetz failure. | The theta divisor of every smooth complex cubic threefold. |
 | Irrationality of Cubic Threefolds after One Stabilization | `X × P¹` is irrational, by way of the rank-two residue marker of the cubic zero block in the categorical direct-QDM ledger. | Every smooth complex cubic threefold `X`. |
 | Irrationality of Cubic Threefolds after One Stabilization | The primitive-sixth framed-monodromy multiplicity of the small even quantum connection equals two. | Every smooth complex cubic threefold `X`. |
@@ -222,6 +231,7 @@ boundary, and reproducible entry points.
 
 | Paper | Area | Central result | Public entry |
 |---|---|---|---|
+| Complete Bounded Repair Ports: Transfer, Reliability, and Geometric Structure | Coding theory / reliability | Exact weighted-functional confinement transfers represented bounded repair ports to positive-density coordinate classes, retaining both support and normalized decoder data. | [PDF](https://github.com/tavisrudd/complete-repair-ports/blob/main/complete_repair_ports.pdf) · [repo](https://github.com/tavisrudd/complete-repair-ports) · [![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.22051904-blue.svg)](https://doi.org/10.5281/zenodo.22051904) |
 | Irrationality of Cubic Threefolds after One Stabilization | Algebraic geometry / birational geometry | Every smooth cubic threefold stays irrational after multiplication by `P¹`, proved from the rank-two residue marker of a categorical direct-QDM ledger, while an explicit family is universally `CH₀`-trivial; the framed count `ν₆ = 2` and its stabilization to `4` are separate computations. | [PDF](https://github.com/tavisrudd/cubic-stabilization-epilogue/blob/main/irrationality_after_one_stabilization.pdf) · [repo](https://github.com/tavisrudd/cubic-stabilization-epilogue) |
 | Deep Holes of Projective Reed–Solomon Codes Beyond Redundancy Four: Recursive Carriers and Exact Classifications Through Redundancy Ten | Coding theory | Deep-hole classifications extend through redundancy ten in stated ranges. | [PDF](https://github.com/tavisrudd/beyond4-prs/blob/main/prs-beyond-redundancy-four.pdf) · [repo](https://github.com/tavisrudd/beyond4-prs) |
 | Local-Unitary Rigidity and Quantitative Rounding for Stabilizer AME States | Quantum information | Exact local-unitary rigidity has a separate quantitative rounding theorem. | [PDF](https://github.com/tavisrudd/ame-lu/blob/main/ame-lu.pdf) · [repo](https://github.com/tavisrudd/ame-lu) |
@@ -253,24 +263,122 @@ guide: what the paper delivers, who may care, and why it matters. If you are
 new to the subject, use those three guide paragraphs as the orientation and
 then read the abstract for the paper's technical statement.
 
-Read the paper summaries in this order:
+### Highlights
 
-1. [Irrationality of Cubic Threefolds after One Stabilization](#irrationality-of-cubic-threefolds-after-one-stabilization)
-2. [Deep Holes of Projective Reed–Solomon Codes Beyond Redundancy Four](#deep-holes-of-projective-reedsolomon-codes-beyond-redundancy-four-recursive-carriers-and-exact-classifications-through-redundancy-ten)
-3. [Local-Unitary Rigidity and Quantitative Rounding for Stabilizer AME States](#local-unitary-rigidity-and-quantitative-rounding-for-stabilizer-ame-states)
-4. [Reconstructing the Clebsch Code and Its Golden Orientation from Its Deep-Hole Syndrome Locus](#reconstructing-the-clebsch-code-and-its-golden-orientation-from-its-deephole-syndrome-locus)
-5. [Quadratic Trade Rigidity and Cubic Orientation in Conic Matching Quotients](#quadratic-trade-rigidity-and-cubic-orientation-in-conic-matching-quotients)
-6. [Golden Descent and Operator Realizations of the Clebsch Cubic](#golden-descent-and-operator-realizations-of-the-clebsch-cubic)
-7. [Reconstructing PG(2,13), Its Conic, and Polarity from the Minimum Words of a Binary Conic Code](#reconstructing-pg213-its-conic-and-polarity-from-the-minimum-words-of-a-binary-conic-code)
-8. [Chordal and Conference Cubics: Reconstruction and a Residual C2-Torsor](#chordal-and-conference-cubics-reconstruction-and-a-residual-c2-torsor)
-9. [Computational Strengthenings of Clebsch Syndrome Rigidity](#computational-strengthenings-of-clebsch-syndrome-rigidity--companion)
-10. [Hodge Atoms as Occurrence-Indexed Marker Ledgers](#hodge-atoms-as-occurrence-indexed-marker-ledgers)
-11. [Gamma Point Rows under Quantum Wall Crossing and a Criterion for Stable Irrationality](#gamma-point-rows-under-quantum-wall-crossing-and-a-criterion-for-stable-irrationality)
-12. [Standard Flips of Discrepancy One: Extremal J-Normalization and the Meijer Aperture at ν=1](#standard-flips-of-discrepancy-one-extremal-j-normalization-and-the-meijer-aperture-at-ν1)
-13. [Arcs Complete Outside a Conic: A Prescribed-Hole Defect Identity and Matching-Design Rigidity](#arcs-complete-outside-a-conic-a-prescribedhole-defect-identity-and-matchingdesign-rigidity)
-14. [Diagonal Isoduality and Transversal Clifford Groups of MDS–CSS Codes](#diagonal-isoduality-and-transversal-clifford-groups-of-mdscss-codes)
-15. [Exchange Landscapes, Orientation, and Rigidity in the Golden Six-Mode Conference Interferometer](#exchange-landscapes-orientation-and-rigidity-in-the-golden-sixmode-conference-interferometer)
-16. [Integral Cohomology and Modular Decomposition for the Theta Divisor of a Cubic Threefold](#integral-cohomology-and-modular-decomposition-for-the-theta-divisor-of-a-cubic-threefold)
+#### Irrationality of Cubic Threefolds after One Stabilization
+
+[PDF](https://github.com/tavisrudd/cubic-stabilization-epilogue/blob/main/irrationality_after_one_stabilization.pdf) · [Repository](https://github.com/tavisrudd/cubic-stabilization-epilogue)
+
+**Standout results.** Every smooth complex cubic threefold stays irrational
+after multiplication by a projective line, and the same holds
+for every smooth prime Fano threefold of genus eight.  The proof runs on an
+occurrence-indexed categorical ledger for generic even quantum `D`-module
+blocks and its rank-two residue marker, which vanishes in dimensions at most
+two and survives on the modified cubic zero block.  The separate
+framed-monodromy count is `ν₆(X) = 2` for every smooth cubic threefold and
+`ν₆(X × P¹) = 4`; its birational invariance through
+dimension four is conditional on two stated hypotheses and gives a second
+proof of the theorem.  On an explicit non-isotrivial family, universal
+`CH₀`-triviality survives that stabilization, so it does not detect the
+irrationality.
+
+> *Abstract* We prove that X × P¹ is irrational for every smooth complex cubic threefold X. We first prove an occurrence-indexed categorical ledger theorem for markers of generic even quantum D-module blocks. Iritani's blowup decomposition and the Iritani–Koto projective-bundle decomposition give its two operation laws; weak factorization then makes every marker whose low-dimensional center terms vanish a birational invariant. The unconditional specialization counts rank-two nilpotent blocks whose canonical elementary modification has nonzero residue discriminant δ♯. Beauville's small quantum algebra gives δ♯ = 4/9 on the cubic zero block. The marker vanishes for points, curves, and surfaces, but survives on X × P¹, while it vanishes on P⁴. Kuznetsov's birational correspondence extends the conclusion to every smooth prime Fano threefold of genus eight.
+>
+> The finer specialization applies the same ledger theorem to blocks that also retain a marked small section and the original loop framing; its fold counts primitive-sixth formal-monodromy eigenvalues of the numerical small even quantum connection. We compute ν₆(X) = 2 and ν₆(X × P¹) = 4. Its blowup and projective-bundle providers retain two stated hypotheses on reconstruction tails and divisor-tagging specialization. Under those hypotheses the same categorical theorem makes ν₆ birationally invariant through dimension four and gives a conditional second proof.
+>
+> Finally, an integral six-axis construction proves universal CH₀-triviality for every smooth member of the nonstandard A₅-invariant pencil: an all-degree saturation theorem for marked finite-étale graph quotients of elliptic powers makes the primitive minimal class of the intermediate Jacobian an integral divisor product. Every moduli point of this pencil but one lies outside the separated-variable locus covered by Colliot-Thélène's criterion; the exception is the Fermat point. Universal CH₀-triviality and irrationality after one stabilization therefore coexist in an explicit nontrivial family, as they also do for Voisin's loci, the Fermat cubic, and the coprime-degree family of Yang–Yu–Zhu.
+
+**Delivers.** An unconditional birational obstruction after one
+projective-line stabilization for every smooth cubic threefold, together with
+an explicit family showing that universal `CH₀`-triviality can hold while that
+irrationality persists; an unconditional computation of the primitive-sixth
+quantum packet and of its value after one stabilization; and, under two stated
+hypotheses, birational invariance of that count through dimension four.  The
+two marker specializations share one categorical occurrence/groupoid/fold
+theorem.
+
+**Who cares.** Algebraic geometers working on rationality, stable rationality,
+intermediate Jacobians, algebraic cycles, quantum connections, or weak
+factorization.
+
+**Why it matters.** Failure of universal `CH₀`-triviality is a standard
+obstruction to stable rationality, but its validity is not a parametrization.
+This paper makes that limitation concrete after an actual stabilization, and
+its residue marker is a direct quantum-`D`-module invariant that applies to
+every smooth cubic threefold, not only the symmetric family used on the cycle
+side.  The classical route stops short here: after one
+stabilization the direct Clemens–Griffiths mechanism gives no contradiction,
+because `H³(X × P¹)` is still `H³(X)`, which the Fano surface of lines
+already carries as its `H¹` up to twist, while the middle `H⁴` is Tate.  The
+recent fourfold criteria that read Hodge data through quantum spectral
+packets do not reach this geometry either, since they assume `b₃ = 0` and a
+large vanishing middle `H⁴`.  The paper claims no novelty for that broad
+philosophy; what is new is the rank-two residue discriminant and the
+categorical occurrence-ledger mechanism that carries it through one
+stabilization.
+Two hypotheses remain, and only for the finer framed invariant: invariance of
+the primitive-sixth framed multiplicity under the reconstruction tail of the
+operation formulas, and under the divisor-tagging specialization.
+
+---
+
+#### Deep Holes of Projective Reed–Solomon Codes Beyond Redundancy Four: Recursive Carriers and Exact Classifications Through Redundancy Ten
+
+[PDF](https://github.com/tavisrudd/beyond4-prs/blob/main/prs-beyond-redundancy-four.pdf) · [Repository](https://github.com/tavisrudd/beyond4-prs) · [![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.21682069-blue.svg)](https://doi.org/10.5281/zenodo.21682069)
+
+**Standout result.** Exact projective Reed–Solomon deep-hole classifications
+extend to redundancies five and six for every prime power q ≥ 7, with further
+exact ranges through redundancy ten.  At redundancy five the split members of
+the pencil are counted exactly in every characteristic on the trivial-gcd
+separable stratum.  The count gives splitting density 1/6 and Chebotarev main
+term (q + 1)/6 with Weil-scale error, lowers the threshold for a split witness
+to q ≥ 20, and cuts the finite residue to seven fields.
+
+> *Abstract* We classify projective Reed–Solomon split-free syndrome directions, in the stated field ranges, from the first previously open case, redundancy five, through redundancy ten, and obtain deep-hole classifications wherever the covering-radius gate is available. A syndrome is split-free precisely when its two-row Hankel kernel contains no completely split squarefree form. At redundancy five, this kernel is a pencil of cubics. At higher redundancy, coherent polar contraction retains a removed root as a marker, allowing a lower split witness to lift without repetition.
+>
+> The split members of the R5 pencil are counted exactly. On the trivial-gcd separable stratum, #Y_f(F_q) = 6N_f + 3d₂ + d₃, where N_f counts the completely split squarefree members, d₂ those with a rational double root, d₃ the perfect cubes, and Y_f is the off-diagonal fiber square. The proof counts rational roots fiber by fiber and uses no discriminant, so it holds in every characteristic. The identity class has splitting density 1/6, giving the Chebotarev main term (q + 1)/6; the identity bounds N_f two-sidedly around that main term at Weil scale, lowers the geometric threshold for a split witness to q ≥ 20, and in characteristic two leaves no split-free S₃ pencil once q ≥ 16. The finite bridge is therefore q ∈ {7, 8, 9, 11, 13, 17, 19}.
+>
+> For every r ≥ 6, the reduced recursively contained locus is exactly the union of the catalecticant rank-two scheme and one maximal adjacent-zero Lucas carrier. Dense squarefree-marker contractions select one terminal component, while Pascal nesting merges all modular descendants into that carrier. This component theorem is unconditional. The finite-field escape statement is separate: if the explicit pointed lower packages exist at every intermediate redundancy, then q ≥ 6r − 15 + ⌊2√(6r − 17)⌋ forces every split-free syndrome into this carrier. Under the same hypothesis, when char F_q > r − 1, the Lucas carrier is empty; the radius theorem then leaves exactly the tangent and conjugate-secant deep-hole families, with q(q + 1)²/2 projective directions.
+>
+> The required packages are discharged at the fixed levels. Redundancies five and six are classified for every q ≥ 7; redundancy seven has a complete split-free classification for every q ≥ 7, which is a deep-hole classification for q ≥ 11; and redundancies eight, nine, and ten have exact deep-hole classifications for q ≥ 43, 53, and 59, respectively. Certificates close the bounded R5–R7 residues, the full degree-nine Lucas carrier at q = 16, 32, and its invariant block at q = 64. A final-pair Artin–Schreier argument then proves that at redundancy ten the Hankel kernel of every point on the full degree-nine Lucas carrier contains a split squarefree form over F_(2^m), m ≥ 4.
+>
+**Delivers.** Exact classifications of received words maximally distant from a
+major family of error-correcting codes, extending well beyond the first few
+understood cases.
+
+**Who cares.** Coding theorists working on Reed–Solomon codes, covering radius,
+and polynomial interpolation.
+
+**Why it matters.** “Deep holes” are maximally far from every codeword.  Their
+classification clarifies the codes' worst-case distance geometry and provides
+a recursive way to organize many field sizes and redundancies.
+
+---
+
+#### Local-Unitary Rigidity and Quantitative Rounding for Stabilizer AME States
+
+[PDF](https://github.com/tavisrudd/ame-lu/blob/main/ame-lu.pdf) · [Repository](https://github.com/tavisrudd/ame-lu) · [![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.21681856-blue.svg)](https://doi.org/10.5281/zenodo.21681856)
+
+**Standout results.** Every product-unitary equivalence between stabilizer AME
+states is local Clifford. A quantitative rounding theorem also places
+sufficiently approximate symmetries near exact Clifford symmetries.
+
+> *Abstract* Let q = pᵉ and m ≥ 2. Every product-unitary intertwiner between two stabilizer AME(2m,q) states is Clifford on each party. The proof recovers the complete local Weyl frame from any (m + 1)-party marginal: the supported stabilizer labels form a q²-element group and project bijectively onto the local Weyl labels. These support bijections also form a minimum-support atlas which classifies local-unitary equivalence up to local symplectic changes of frame. As an encoder consequence, every transversal conversion between the associated [[2m−1,1,m]]q stabilizer codes is Clifford on every physical and logical factor.
+>
+> We prove a quantitative counterpart without reading the exponentially small Weyl signal of one marginal. Viewing each party as the logical leg of the associated code, a leakage-aware three-region cleaning argument and Weyl–Fourier concentration round every local factor within 8ε of a Clifford. The uniform stabilizer overlap gap then selects an exact symmetry and gives a defect-only decomposition radius Θ(min{p⁻¹, q⁻¹ᐟ², n⁻¹ᐟ²}), n = 2m, with residual generator norm at most π√q ε. At a dimension-only radius the rounded symplectic maps already satisfy the exact minimum-support atlas. The remaining obstruction is affine: localized commutators cancel the stabilizer-character phases and therefore cannot control the product-Pauli correction. On generalized and extended Reed–Solomon AME families the certified scale is Θ(q⁻¹) over prime fields and Θ(q⁻¹ᐟ²) at extension degree at least two.
+>
+**Delivers.** Exact product-unitary changes between a broad class of highly
+entangled quantum states must come from the code's discrete symmetry group;
+approximate changes are quantitatively close to that group.
+
+**Who cares.** Quantum-information theorists, stabilizer-code researchers, and
+people studying robust classifications of entangled states.
+
+**Why it matters.** The result gives both an exact classification and a
+noise-tolerant version, which is essential when experiments and numerical
+models produce near-symmetries rather than perfect ones.
+
+---
 
 ### Rigidity from Sparse Shadows
 
@@ -450,6 +558,61 @@ public mirror.
 
 ### Further Geometry, Coding Theory, and Quantum Information Papers
 
+#### Complete Bounded Repair Ports: Transfer, Reliability, and Geometric Structure
+
+[PDF](https://github.com/tavisrudd/complete-repair-ports/blob/main/complete_repair_ports.pdf) · [Repository](https://github.com/tavisrudd/complete-repair-ports) · [![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.22051904-blue.svg)](https://doi.org/10.5281/zenodo.22051904)
+
+**Standout result.** An exact weighted-functional confinement criterion
+transfers both the support clutter and every normalized scalar decoder of a
+bounded repair port. Below its pointed zero-functional threshold, any
+represented port occurs on a designated positive-density coordinate class in
+an asymptotically good fixed-alphabet family.
+
+> *Abstract* For a linear code and a distinguished coordinate, the complete
+> bounded repair port records every dual recovery equation using at most a
+> prescribed number of helpers. Its support clutter says which helpers
+> suffice, its normalized coefficients retain the represented decoder, and
+> its Boolean success event governs reliability. This extra coefficient data
+> is substantial: for every proper MDS code, the minimum coefficient port at
+> any distinguished coordinate reconstructs the represented code, although
+> its support projection is the generic complete uniform clutter.
+>
+> We prove an exact weighted-functional transfer theorem for concatenation.
+> In the fixed-inner linear regime, a pointed zero-functional cost is the
+> persistent obstruction to copying a bounded port blockwise; every
+> represented port below this threshold occurs on a positive-density
+> designated coordinate class in an asymptotically good fixed-alphabet
+> family. We also derive exact deletion–contraction and pivotal identities, a
+> bounded BEC EXIT hierarchy whose successive differences recover the
+> distribution of the cheapest available repair radius, and a full-radius
+> specialization of the Las Vergnas polynomial for `M∖x → M/x`. An explicit
+> represented pair proves that this
+> full-radius invariant does not determine the bounded-radius filtration.
+>
+> Characteristic-three examples exhibit both extremes: a completed
+> twisted-cubic–axis code has two uniform exact matching/transversal rows and
+> strict weighted transfer, while a quartic normal rational curve with its
+> nucleus has a Steiner `S(3,4,q+1)` port at the nucleus and a compulsory
+> nucleus helper at every curve target.
+
+**Delivers.** A complete pointed support/coefficient/probability object; MDS
+coefficient-port reconstruction; an exact concatenation threshold; a
+positive-density realization theorem; deletion–contraction, pivotal, blocker,
+and bounded-EXIT identities; a pointed-Tutte specialization; and exact
+cubic–axis and quartic–nucleus port inventories.
+
+**Who cares.** Coding theorists working on locality and availability,
+distributed storage, erasure decoding, code concatenation, matroid
+reliability, or finite-geometric code constructions.
+
+**Why it matters.** Locality and disjoint availability retain only coarse
+support data. The complete port keeps the actual scalar recovery equations
+and the full failure event visible, while the transfer theorem identifies the
+precise obstruction to reproducing that richer local object throughout a
+long code.
+
+---
+
 #### Integral Cohomology and Modular Decomposition for the Theta Divisor of a Cubic Threefold
 
 [PDF](https://github.com/tavisrudd/blown-up-theta-lattice/blob/main/blown_up_theta_lattice.pdf) · [Repository](https://github.com/tavisrudd/blown-up-theta-lattice) · [![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.22036586-blue.svg)](https://doi.org/10.5281/zenodo.22036586)
@@ -619,63 +782,6 @@ projective-bundle step.
 
 ---
 
-#### Irrationality of Cubic Threefolds after One Stabilization
-
-[PDF](https://github.com/tavisrudd/cubic-stabilization-epilogue/blob/main/irrationality_after_one_stabilization.pdf) · [Repository](https://github.com/tavisrudd/cubic-stabilization-epilogue)
-
-**Standout results.** Every smooth complex cubic threefold stays irrational
-after multiplication by a projective line, and the same holds
-for every smooth prime Fano threefold of genus eight.  The proof runs on an
-occurrence-indexed categorical ledger for generic even quantum `D`-module
-blocks and its rank-two residue marker, which vanishes in dimensions at most
-two and survives on the modified cubic zero block.  The separate
-framed-monodromy count is `ν₆(X) = 2` for every smooth cubic threefold and
-`ν₆(X × P¹) = 4`; its birational invariance through
-dimension four is conditional on two stated hypotheses and gives a second
-proof of the theorem.  On an explicit non-isotrivial family, universal
-`CH₀`-triviality survives that stabilization, so it does not detect the
-irrationality.
-
-> *Abstract* We prove that X × P¹ is irrational for every smooth complex cubic threefold X. We first prove an occurrence-indexed categorical ledger theorem for markers of generic even quantum D-module blocks. Iritani's blowup decomposition and the Iritani–Koto projective-bundle decomposition give its two operation laws; weak factorization then makes every marker whose low-dimensional center terms vanish a birational invariant. The unconditional specialization counts rank-two nilpotent blocks whose canonical elementary modification has nonzero residue discriminant δ♯. Beauville's small quantum algebra gives δ♯ = 4/9 on the cubic zero block. The marker vanishes for points, curves, and surfaces, but survives on X × P¹, while it vanishes on P⁴. Kuznetsov's birational correspondence extends the conclusion to every smooth prime Fano threefold of genus eight.
->
-> The finer specialization applies the same ledger theorem to blocks that also retain a marked small section and the original loop framing; its fold counts primitive-sixth formal-monodromy eigenvalues of the numerical small even quantum connection. We compute ν₆(X) = 2 and ν₆(X × P¹) = 4. Its blowup and projective-bundle providers retain two stated hypotheses on reconstruction tails and divisor-tagging specialization. Under those hypotheses the same categorical theorem makes ν₆ birationally invariant through dimension four and gives a conditional second proof.
->
-> Finally, an integral six-axis construction proves universal CH₀-triviality for every smooth member of the nonstandard A₅-invariant pencil: an all-degree saturation theorem for marked finite-étale graph quotients of elliptic powers makes the primitive minimal class of the intermediate Jacobian an integral divisor product. Every moduli point of this pencil but one lies outside the separated-variable locus covered by Colliot-Thélène's criterion; the exception is the Fermat point. Universal CH₀-triviality and irrationality after one stabilization therefore coexist in an explicit nontrivial family, as they also do for Voisin's loci, the Fermat cubic, and the coprime-degree family of Yang–Yu–Zhu.
-
-**Delivers.** An unconditional birational obstruction after one
-projective-line stabilization for every smooth cubic threefold, together with
-an explicit family showing that universal `CH₀`-triviality can hold while that
-irrationality persists; an unconditional computation of the primitive-sixth
-quantum packet and of its value after one stabilization; and, under two stated
-hypotheses, birational invariance of that count through dimension four.  The
-two marker specializations share one categorical occurrence/groupoid/fold
-theorem.
-
-**Who cares.** Algebraic geometers working on rationality, stable rationality,
-intermediate Jacobians, algebraic cycles, quantum connections, or weak
-factorization.
-
-**Why it matters.** Failure of universal `CH₀`-triviality is a standard
-obstruction to stable rationality, but its validity is not a parametrization.
-This paper makes that limitation concrete after an actual stabilization, and
-its residue marker is a direct quantum-`D`-module invariant that applies to
-every smooth cubic threefold, not only the symmetric family used on the cycle
-side.  The classical route stops short here: after one
-stabilization the direct Clemens–Griffiths mechanism gives no contradiction,
-because `H³(X × P¹)` is still `H³(X)`, which the Fano surface of lines
-already carries as its `H¹` up to twist, while the middle `H⁴` is Tate.  The
-recent fourfold criteria that read Hodge data through quantum spectral
-packets do not reach this geometry either, since they assume `b₃ = 0` and a
-large vanishing middle `H⁴`.  The paper claims no novelty for that broad
-philosophy; what is new is the rank-two residue discriminant and the
-categorical occurrence-ledger mechanism that carries it through one
-stabilization.
-Two hypotheses remain, and only for the finer framed invariant: invariance of
-the primitive-sixth framed multiplicity under the reconstruction tail of the
-operation formulas, and under the divisor-tagging specialization.
-
----
-
 #### Arcs Complete Outside a Conic: A Prescribed-Hole Defect Identity and Matching-Design Rigidity
 
 [PDF](https://github.com/tavisrudd/arcs-complete-outside-conic/blob/main/arcs_complete_outside_conic.pdf) · [Repository](https://github.com/tavisrudd/arcs-complete-outside-conic) · [![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.21682567-blue.svg)](https://doi.org/10.5281/zenodo.21682567)
@@ -708,63 +814,6 @@ defect in the present paper's matching-design sense.
 
 ---
 
-#### Deep Holes of Projective Reed–Solomon Codes Beyond Redundancy Four: Recursive Carriers and Exact Classifications Through Redundancy Ten
-
-[PDF](https://github.com/tavisrudd/beyond4-prs/blob/main/prs-beyond-redundancy-four.pdf) · [Repository](https://github.com/tavisrudd/beyond4-prs) · [![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.21682069-blue.svg)](https://doi.org/10.5281/zenodo.21682069)
-
-**Standout result.** Exact projective Reed–Solomon deep-hole classifications
-extend to redundancies five and six for every prime power q ≥ 7, with further
-exact ranges through redundancy ten.  At redundancy five the split members of
-the pencil are counted exactly in every characteristic on the trivial-gcd
-separable stratum.  The count gives splitting density 1/6 and Chebotarev main
-term (q + 1)/6 with Weil-scale error, lowers the threshold for a split witness
-to q ≥ 20, and cuts the finite residue to seven fields.
-
-> *Abstract* We classify projective Reed–Solomon split-free syndrome directions, in the stated field ranges, from the first previously open case, redundancy five, through redundancy ten, and obtain deep-hole classifications wherever the covering-radius gate is available. A syndrome is split-free precisely when its two-row Hankel kernel contains no completely split squarefree form. At redundancy five, this kernel is a pencil of cubics. At higher redundancy, coherent polar contraction retains a removed root as a marker, allowing a lower split witness to lift without repetition.
->
-> The split members of the R5 pencil are counted exactly. On the trivial-gcd separable stratum, #Y_f(F_q) = 6N_f + 3d₂ + d₃, where N_f counts the completely split squarefree members, d₂ those with a rational double root, d₃ the perfect cubes, and Y_f is the off-diagonal fiber square. The proof counts rational roots fiber by fiber and uses no discriminant, so it holds in every characteristic. The identity class has splitting density 1/6, giving the Chebotarev main term (q + 1)/6; the identity bounds N_f two-sidedly around that main term at Weil scale, lowers the geometric threshold for a split witness to q ≥ 20, and in characteristic two leaves no split-free S₃ pencil once q ≥ 16. The finite bridge is therefore q ∈ {7, 8, 9, 11, 13, 17, 19}.
->
-> For every r ≥ 6, the reduced recursively contained locus is exactly the union of the catalecticant rank-two scheme and one maximal adjacent-zero Lucas carrier. Dense squarefree-marker contractions select one terminal component, while Pascal nesting merges all modular descendants into that carrier. This component theorem is unconditional. The finite-field escape statement is separate: if the explicit pointed lower packages exist at every intermediate redundancy, then q ≥ 6r − 15 + ⌊2√(6r − 17)⌋ forces every split-free syndrome into this carrier. Under the same hypothesis, when char F_q > r − 1, the Lucas carrier is empty; the radius theorem then leaves exactly the tangent and conjugate-secant deep-hole families, with q(q + 1)²/2 projective directions.
->
-> The required packages are discharged at the fixed levels. Redundancies five and six are classified for every q ≥ 7; redundancy seven has a complete split-free classification for every q ≥ 7, which is a deep-hole classification for q ≥ 11; and redundancies eight, nine, and ten have exact deep-hole classifications for q ≥ 43, 53, and 59, respectively. Certificates close the bounded R5–R7 residues, the full degree-nine Lucas carrier at q = 16, 32, and its invariant block at q = 64. A final-pair Artin–Schreier argument then proves that at redundancy ten the Hankel kernel of every point on the full degree-nine Lucas carrier contains a split squarefree form over F_(2^m), m ≥ 4.
->
-**Delivers.** Exact classifications of received words maximally distant from a
-major family of error-correcting codes, extending well beyond the first few
-understood cases.
-
-**Who cares.** Coding theorists working on Reed–Solomon codes, covering radius,
-and polynomial interpolation.
-
-**Why it matters.** “Deep holes” are maximally far from every codeword.  Their
-classification clarifies the codes' worst-case distance geometry and provides
-a recursive way to organize many field sizes and redundancies.
-
----
-
-#### Local-Unitary Rigidity and Quantitative Rounding for Stabilizer AME States
-
-[PDF](https://github.com/tavisrudd/ame-lu/blob/main/ame-lu.pdf) · [Repository](https://github.com/tavisrudd/ame-lu) · [![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.21681856-blue.svg)](https://doi.org/10.5281/zenodo.21681856)
-
-**Standout results.** Every product-unitary equivalence between stabilizer AME
-states is local Clifford. A quantitative rounding theorem also places
-sufficiently approximate symmetries near exact Clifford symmetries.
-
-> *Abstract* Let q = pᵉ and m ≥ 2. Every product-unitary intertwiner between two stabilizer AME(2m,q) states is Clifford on each party. The proof recovers the complete local Weyl frame from any (m + 1)-party marginal: the supported stabilizer labels form a q²-element group and project bijectively onto the local Weyl labels. These support bijections also form a minimum-support atlas which classifies local-unitary equivalence up to local symplectic changes of frame. As an encoder consequence, every transversal conversion between the associated [[2m−1,1,m]]q stabilizer codes is Clifford on every physical and logical factor.
->
-> We prove a quantitative counterpart without reading the exponentially small Weyl signal of one marginal. Viewing each party as the logical leg of the associated code, a leakage-aware three-region cleaning argument and Weyl–Fourier concentration round every local factor within 8ε of a Clifford. The uniform stabilizer overlap gap then selects an exact symmetry and gives a defect-only decomposition radius Θ(min{p⁻¹, q⁻¹ᐟ², n⁻¹ᐟ²}), n = 2m, with residual generator norm at most π√q ε. At a dimension-only radius the rounded symplectic maps already satisfy the exact minimum-support atlas. The remaining obstruction is affine: localized commutators cancel the stabilizer-character phases and therefore cannot control the product-Pauli correction. On generalized and extended Reed–Solomon AME families the certified scale is Θ(q⁻¹) over prime fields and Θ(q⁻¹ᐟ²) at extension degree at least two.
->
-**Delivers.** Exact product-unitary changes between a broad class of highly
-entangled quantum states must come from the code's discrete symmetry group;
-approximate changes are quantitatively close to that group.
-
-**Who cares.** Quantum-information theorists, stabilizer-code researchers, and
-people studying robust classifications of entangled states.
-
-**Why it matters.** The result gives both an exact classification and a
-noise-tolerant version, which is essential when experiments and numerical
-models produce near-symmetries rather than perfect ones.
-
----
 
 #### Diagonal Isoduality and Transversal Clifford Groups of MDS–CSS Codes
 
