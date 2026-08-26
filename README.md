@@ -37,9 +37,9 @@ examples.
 | Problem | Shadow or marker | Result |
 |---|---|---|
 | Cubic stabilization | Rank-two formal block and saturated Cox-torus quotient | Universal irrationality after `P¹`, with exact level-two examples |
-| Projective Reed–Solomon deep holes | Coherent marked contractions | Persistent and modular obstruction carriers |
+| Projective Reed–Solomon deep holes | Split-free syndrome carriers | Exact classifications through R10 and an all-redundancy structural theorem |
 | Stabilizer AME states | Marginal Weyl atlas | Local-Clifford rigidity and quantitative rounding |
-| Bounded linear recovery | Relative weights and normalized recovery equations | Exact costs and transfer thresholds |
+| Bounded linear recovery | Relative weights and normalized recovery equations | Exact costs, compositional optimization, and capacity-aware scheduling |
 | Finite planes and codes | Deep-hole or minimum-word data | Recovery of the marked geometry |
 | Complete higher arcs | Integral maximal-secant degree distributions | Arithmetic lower-bound corrections and bounded modular repair |
 | Cubic-threefold theta divisor | Integral lattice and local link data | Global lattice and perverse decomposition |
@@ -165,15 +165,14 @@ results.
 
 ### Coding theory and quantum information
 
-- **Recursive carriers for projective Reed–Solomon deep holes.** For every
-  redundancy `r ≥ 6`, the reduced recursively contained locus is the union of
-  the catalecticant rank-two scheme and one maximal modular Lucas carrier.
-  This component theorem is unconditional. Under the stated intermediate
-  lower-package hypotheses, a uniform field bound confines every split-free
-  syndrome to that locus; those packages are discharged through redundancy
-  ten, giving the exact classifications in the stated ranges. At redundancy
-  five, an all-characteristic count gives splitting density `1/6` on the
-  trivial-gcd separable stratum. [Deep Holes of Projective Reed–Solomon Codes Beyond Redundancy Four: Recursive Carriers and Exact Classifications Through Redundancy Ten](https://github.com/tavisrudd/beyond4-prs/blob/main/prs-beyond-redundancy-four.pdf).
+- **Projective Reed–Solomon deep holes beyond redundancy four.** Redundancies
+  five and six are classified for every `q ≥ 7`; redundancy seven is
+  split-free complete for every `q ≥ 7` and deep-hole complete for `q ≥ 11`,
+  with exactly ten deep directions at `q = 8`; and redundancies eight through
+  ten are classified for `q ≥ 43, 53, 59`. For every `r ≥ 6`, an unconditional
+  structural theorem identifies the reduced recursively contained locus with
+  the catalecticant rank-two scheme and one maximal Lucas carrier.
+  [Deep Holes of Projective Reed–Solomon Codes Beyond Redundancy Four: Recursive Carriers and Exact Classifications Through Redundancy Ten](https://github.com/tavisrudd/beyond4-prs/blob/main/prs-beyond-redundancy-four.pdf).
 
 - **Exact and quantitative AME rigidity.** Every product-unitary intertwiner
   between stabilizer `AME(2m,q)` states is local Clifford for every prime power
@@ -187,18 +186,17 @@ results.
   one. Its nullity determines whether the projective transversal group is
   `Fq² ⋊ SL₂(q)` or the smaller split-torus branch. [Diagonal Isoduality and Transversal Clifford Groups](https://github.com/tavisrudd/mds-css-transversal-groups/blob/main/mds-css-transversal-groups.pdf).
 
-- **Relative weights are exact local recovery costs and transfer thresholds.**
-  Shortening and puncturing the inner dual onto the helper coordinates give
-  `K_P = short_J(I⊥) ⊆ D_P = punct_J(I⊥)`; their `t`th
-  relative generalized Hamming weight is the minimum helper union needed to
-  recover `t` independent target combinations.  For an outer code with at
-  least two blocks and `d(O⊥) > r + 1`, every cost-`r` system is confined to
-  its inner block exactly when `r < M_t(D_P,K_P) + d(I⊥)`.  Below that gate,
-  concatenation preserves normalized equations and exact helper supports.  At
-  more generally, for every fixed target-message subspace and nonzero outer
-  projection, a finite theorem optimizes prescribed-coset support costs over
-  the complete outer functional dual and gives the exact first nonconfined
-  cost without an outer-distance hypothesis.
+- **Relative weights are exact local recovery costs, and their labelled lifts
+  compose.** Shortening and puncturing the inner dual onto the helpers give
+  `K_P = short_J(I⊥) ⊆ D_P = punct_J(I⊥)`; `M_t(D_P,K_P)` is the minimum
+  helper union recovering `t` independent target combinations. For each fixed
+  nonzero target-message subspace, prescribed-coset costs over the complete
+  outer functional dual give the exact first nonconfined cost without a
+  distance hypothesis. The labelled costs compose associatively through
+  compatible finite concatenation towers. Under `d(O⊥) > r + 1`, confinement
+  through radius `r` is equivalent to `r < M_t(D_P,K_P) + d(I⊥)`.
+  ERGO-Comp executes this recursion, retains witnesses, and schedules repairs
+  exactly under heterogeneous capacities.
   [Exact Transfer of Bounded Linear Recovery and Relative Weight Hierarchies](https://github.com/tavisrudd/complete-repair-ports/blob/main/complete_repair_ports.pdf).
 
 - **Order six is the unique nontrivial cut-rigid symmetric conference
@@ -244,7 +242,8 @@ the theorem column.
 | Integral Secant Distributions and Line-Code Obstructions for Complete `(k,n)`-Arcs | Exact integer envelopes for the internal and external maximal-secant degrees give a positive linear correction to the real incidence bound. | Every ordered factorization `lambda = uv` in positive integers, with `q = (u+v+1)m`, `n = (u+1)m+1`, and the stated external coverage hypothesis. |
 | Integral Secant Distributions and Line-Code Obstructions for Complete `(k,n)`-Arcs | The full dual maximal-secant set can be changed at `O(1)` support points into an exact `lambda mod p` multiset. | Every fixed factor pair `lambda=uv` with `u+v+1` a power of `p`, along `q=p^e`, for arcs at the leading equality density with the stated external coverage. |
 | Integral Secant Distributions and Line-Code Obstructions for Complete `(k,n)`-Arcs | `t_{2q/3+1}(2,q) ≥ q²/3 + 5q/3 − o(q)`; every asymptotically matching family has a centered residue word generated by exactly three lines. | `q = 3^h` as `h` tends to infinity. |
-| Deep Holes of Projective Reed–Solomon Codes Beyond Redundancy Four: Recursive Carriers and Exact Classifications Through Redundancy Ten | Split-free directions, and deep holes wherever the covering-radius gate applies, are classified in the stated ranges. | R5–R6: every `q ≥ 7`; R7: split-free for every `q ≥ 7` and deep holes for `q ≥ 11`; R8–R10: `q ≥ 43, 53, 59`. |
+| Deep Holes of Projective Reed–Solomon Codes Beyond Redundancy Four: Recursive Carriers and Exact Classifications Through Redundancy Ten | Split-free directions, and deep holes wherever the covering-radius theorem applies, are classified in the stated ranges. | R5–R6: every `q ≥ 7`; R7: split-free for every `q ≥ 7`, deep holes for `q ≥ 11`, and exactly ten deep directions at `q=8`; R8–R10: `q ≥ 43, 53, 59`. |
+| Deep Holes of Projective Reed–Solomon Codes Beyond Redundancy Four: Recursive Carriers and Exact Classifications Through Redundancy Ten | For every `r ≥ 6`, the reduced recursively contained locus is exactly the catalecticant rank-two scheme together with one maximal adjacent-zero Lucas carrier. | Every redundancy `r ≥ 6`, unconditionally. |
 | Deep Holes of Projective Reed–Solomon Codes Beyond Redundancy Four: Recursive Carriers and Exact Classifications Through Redundancy Ten | On the trivial-gcd separable stratum, `#Y = 6N + 3d₂ + d₃` in every characteristic. | Every field order and characteristic. |
 | Local-Unitary Rigidity and Quantitative Rounding for Stabilizer AME States | Every product-unitary intertwiner between stabilizer `AME(2m,q)` states is Clifford on each party. | Every prime power `q = pᵉ` and `m ≥ 2`. |
 | Diagonal Isoduality and Transversal Clifford Groups of MDS–CSS Codes | The diagonal multiplier nullity fixes the transversal logical group. | All `[2m,m,m+1]q` MDS codes over odd prime fields. |
@@ -265,7 +264,7 @@ boundary, and reproducible entry points.
 | Sharpness of Irrationality after One Stabilization for Cubic Threefolds | Algebraic geometry / birational geometry | The universal one-stabilization irrationality bound is sharp: two smooth cubic threefolds have exact stable-rationality level two; the reusable surface theorem proves `S × A²` rational from a rational point and a stably permutation geometric Picard lattice. | [PDF](https://github.com/tavisrudd/cubic-stabilization-irrationality/blob/main/cubic_stabilization_irrationality.pdf) · [repo](https://github.com/tavisrudd/cubic-stabilization-irrationality) |
 | Integral Divisor Products on the Nonstandard A₅-Invariant Cubic Pencil | Algebraic geometry / algebraic cycles | Every smooth member of the non-isotrivial pencil is universally `CH₀`-trivial; after multiplication by `P¹`, it remains universally `CH₀`-trivial and is irrational. | [PDF](https://github.com/tavisrudd/cubic-stabilization-m1/blob/main/companions/six-axis-cubic-pencil/six_axis_cubic_pencil.pdf) · [repo](https://github.com/tavisrudd/cubic-stabilization-m1) |
 | Framed Formal Monodromy of Cubic Threefolds | Algebraic geometry / quantum cohomology | The unconditional count is `ν₆(X) = 2` and satisfies the projective-space product formula; its operation formulas and birational invariance remain conditional on two explicit hypotheses. | [PDF](https://github.com/tavisrudd/cubic-stabilization-m1/blob/main/companions/cubic-framed-monodromy/cubic_framed_monodromy.pdf) · [repo](https://github.com/tavisrudd/cubic-stabilization-m1) |
-| Deep Holes of Projective Reed–Solomon Codes Beyond Redundancy Four: Recursive Carriers and Exact Classifications Through Redundancy Ten | Coding theory | Deep-hole classifications extend through redundancy ten in stated ranges. | [PDF](https://github.com/tavisrudd/beyond4-prs/blob/main/prs-beyond-redundancy-four.pdf) · [repo](https://github.com/tavisrudd/beyond4-prs) |
+| Deep Holes of Projective Reed–Solomon Codes Beyond Redundancy Four: Recursive Carriers and Exact Classifications Through Redundancy Ten | Coding theory | Exact fixed-level classifications through redundancy ten, plus an unconditional all-redundancy carrier theorem. | [PDF](https://github.com/tavisrudd/beyond4-prs/blob/main/prs-beyond-redundancy-four.pdf) · [repo](https://github.com/tavisrudd/beyond4-prs) |
 | Local-Unitary Rigidity and Quantitative Rounding for Stabilizer AME States | Quantum information | Exact local-unitary rigidity has a separate quantitative rounding theorem. | [PDF](https://github.com/tavisrudd/ame-lu/blob/main/ame-lu.pdf) · [repo](https://github.com/tavisrudd/ame-lu) |
 | Reconstructing the Clebsch Code from Its Deep-Hole Syndrome Locus | Finite geometry / coding | Deep-hole data recognize the Clebsch code and recover its conference matrix up to switching and global negation. | [PDF](https://github.com/tavisrudd/clebsch-rigidity/blob/main/clebsch_rigidity.pdf) · [repo](https://github.com/tavisrudd/clebsch-rigidity) |
 | Quadratic Trade Rigidity and Cubic Orientation in Conic Matching Quotients | Algebraic combinatorics | On the matching carrier, a two-valued quadratic trade classifies two exceptional geometries and a cubic orients their sheets. | [PDF](https://github.com/tavisrudd/clebsch-factorization/blob/main/clebsch_factorization.pdf) · [repo](https://github.com/tavisrudd/clebsch-factorization) |
@@ -280,7 +279,7 @@ boundary, and reproducible entry points.
 | Balanced Cuts of Conference Matrices: Squared-Spectrum Rigidity and Hermitian Holonomy | Matrix theory / algebraic combinatorics / mathematical physics | Order six is the unique nontrivial cut-independent case; Hermitian triangle holonomy controls the degree-three frontier and rigidity. | [PDF](https://github.com/tavisrudd/conference-cut-spectra/blob/main/conference_cut_spectra.pdf) · [repo](https://github.com/tavisrudd/conference-cut-spectra) |
 | Integral Cohomology and Modular Decomposition for the Theta Divisor of a Cubic Threefold | Algebraic geometry / topology | The rank-130 integral middle lattice has canonical mod-two glue, while the same resolution carries a factor-three integral perverse attachment, a length-three modular Loewy chain, and failure of relative hard Lefschetz modulo three. | [PDF](https://github.com/tavisrudd/blown-up-theta-lattice/blob/main/blown_up_theta_lattice.pdf) · [repo](https://github.com/tavisrudd/blown-up-theta-lattice) |
 | Frobenius-equivariant Pair Extension and Robust Repair of Eight-Arcs | Finite geometry / coding theory | Fixed mate-line carriers and exact collision corrections give Frobenius-compatible paired MDS extensions, including the exact two-fixed-point minimum over F₂₅. | [PDF](https://github.com/tavisrudd/equivariant-robust-completion/blob/main/equivariant-robust-completion.pdf) · [repo](https://github.com/tavisrudd/equivariant-robust-completion) |
-| Exact Transfer of Bounded Linear Recovery and Relative Weight Hierarchies | Coding theory / distributed storage | A complete outer-functional prescribed-coset optimization gives the exact finite nonconfinement cost, relative generalized weights are its outer-distance specialization, and the labelled costs compose through finite concatenation towers. | [PDF](https://github.com/tavisrudd/complete-repair-ports/blob/main/complete_repair_ports.pdf) · [repo](https://github.com/tavisrudd/complete-repair-ports) |
+| Exact Transfer of Bounded Linear Recovery and Relative Weight Hierarchies | Coding theory / distributed storage | Prescribed-coset optimization gives the exact finite nonconfinement cost; labelled costs compose through finite towers, and ERGO-Comp evaluates them with witnesses and exact capacity-aware repair scheduling. | [PDF](https://github.com/tavisrudd/complete-repair-ports/blob/main/complete_repair_ports.pdf) · [repo](https://github.com/tavisrudd/complete-repair-ports) |
 
 The repository for *Reconstructing the Clebsch Code from Its Deep-Hole
 Syndrome Locus* also contains the computational companion
@@ -434,23 +433,19 @@ unconditional one-stabilization proof.
 
 #### Deep Holes of Projective Reed–Solomon Codes Beyond Redundancy Four: Recursive Carriers and Exact Classifications Through Redundancy Ten
 
-[PDF](https://github.com/tavisrudd/beyond4-prs/blob/main/prs-beyond-redundancy-four.pdf) · [Repository](https://github.com/tavisrudd/beyond4-prs) · [![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.21682069-blue.svg)](https://doi.org/10.5281/zenodo.21682069)
+[PDF](https://github.com/tavisrudd/beyond4-prs/blob/main/prs-beyond-redundancy-four.pdf) · [Repository](https://github.com/tavisrudd/beyond4-prs) · [![Version 1 concept DOI](https://img.shields.io/badge/Version_1_concept_DOI-10.5281%2Fzenodo.21682069-blue.svg)](https://doi.org/10.5281/zenodo.21682069)
 
-**Standout result.** Exact projective Reed–Solomon deep-hole classifications
-extend to redundancies five and six for every prime power q ≥ 7, with further
-exact ranges through redundancy ten.  At redundancy five the split members of
-the pencil are counted exactly in every characteristic on the trivial-gcd
-separable stratum.  The count gives splitting density 1/6 and Chebotarev main
-term (q + 1)/6 with Weil-scale error, lowers the threshold for a split witness
-to q ≥ 20, and cuts the finite residue to seven fields.
+**Standout results.** Redundancies five and six are classified for every prime
+power q ≥ 7. Redundancy seven is split-free complete for every q ≥ 7 and
+deep-hole complete for q ≥ 11, while exact distance extraction at q = 8 leaves
+ten deep directions in two orbits. Exact classifications continue through
+redundancy ten at the stated thresholds. Independently of those fixed-level
+ranges, the reduced recursively contained locus is determined for every
+redundancy r ≥ 6.
 
-> *Abstract* We classify projective Reed–Solomon split-free syndrome directions, in the stated field ranges, from the first previously open case, redundancy five, through redundancy ten, and obtain deep-hole classifications wherever the covering-radius gate is available. A syndrome is split-free precisely when its two-row Hankel kernel contains no completely split squarefree form. At redundancy five, this kernel is a pencil of cubics. At higher redundancy, coherent polar contraction retains a removed root as a marker, allowing a lower split witness to lift without repetition.
+> *Abstract* We classify deep holes of full-length projective Reed–Solomon codes beyond redundancy four, beginning with redundancy five, the first previously open case. At redundancies five and six, the classifications are complete for every prime power q ≥ 7. At redundancy seven, we classify all split-free syndrome directions for q ≥ 7 and all deep holes for q ≥ 11; at q = 8, exact distances leave precisely ten deep directions in two orbits. At redundancies eight, nine, and ten, exact deep-hole classifications hold for q ≥ 43, 53, 59, respectively.
 >
-> The split members of the R5 pencil are counted exactly. On the trivial-gcd separable stratum, #Y_f(F_q) = 6N_f + 3d₂ + d₃, where N_f counts the completely split squarefree members, d₂ those with a rational double root, d₃ the perfect cubes, and Y_f is the off-diagonal fiber square. The proof counts rational roots fiber by fiber and uses no discriminant, so it holds in every characteristic. The identity class has splitting density 1/6, giving the Chebotarev main term (q + 1)/6; the identity bounds N_f two-sidedly around that main term at Weil scale, lowers the geometric threshold for a split witness to q ≥ 20, and in characteristic two leaves no split-free S₃ pencil once q ≥ 16. The finite bridge is therefore q ∈ {7, 8, 9, 11, 13, 17, 19}.
->
-> For every r ≥ 6, the reduced recursively contained locus is exactly the union of the catalecticant rank-two scheme and one maximal adjacent-zero Lucas carrier. Dense squarefree-marker contractions select one terminal component, while Pascal nesting merges all modular descendants into that carrier. This component theorem is unconditional. The finite-field escape statement is separate: if the explicit pointed lower packages exist at every intermediate redundancy, then q ≥ 6r − 15 + ⌊2√(6r − 17)⌋ forces every split-free syndrome into this carrier. Under the same hypothesis, when char F_q > r − 1, the Lucas carrier is empty; the radius theorem then leaves exactly the tangent and conjugate-secant deep-hole families, with q(q + 1)²/2 projective directions.
->
-> The required packages are discharged at the fixed levels. Redundancies five and six are classified for every q ≥ 7; redundancy seven has a complete split-free classification for every q ≥ 7, which is a deep-hole classification for q ≥ 11; and redundancies eight, nine, and ten have exact deep-hole classifications for q ≥ 43, 53, and 59, respectively. Certificates close the bounded R5–R7 residues, the full degree-nine Lucas carrier at q = 16, 32, and its invariant block at q = 64. A final-pair Artin–Schreier argument then proves that at redundancy ten the Hankel kernel of every point on the full degree-nine Lucas carrier contains a split squarefree form over F_(2^m), m ≥ 4.
+> The key mechanism is coherent polar contraction, which propagates split-squarefree witnesses detected in a two-row Hankel kernel. For every r ≥ 6, it unconditionally identifies the reduced recursively contained locus as the catalecticant rank-two scheme together with one maximal adjacent-zero Lucas carrier. Under explicit intermediate-stage hypotheses and q ≥ 6r − 15 + ⌊2√(6r − 17)⌋, every split-free syndrome lies in this union; when char F_q > r − 1 and the covering radius equals r − 1, only the tangent and conjugate-secant deep-hole families remain. At redundancy ten, the degree-nine Lucas carrier is shallow over every F_(2^m), m ≥ 4. Public software and replayable certificates record the trust boundaries.
 >
 **Delivers.** Exact classifications of received words maximally distant from a
 major family of error-correcting codes, extending well beyond the first few
@@ -725,42 +720,34 @@ a fixed code.
 **Standout result.** For a target/helper split, shortening and puncturing the
 inner dual onto the helper coordinates give
 `K_P = short_J(I^perp) <= D_P = punct_J(I^perp)`.
-Its relative generalized Hamming weights are exactly the minimum
-helper-union costs for recovering independent target combinations. For every
-fixed nonzero target-message subspace, a joint prescribed-coset optimization
-over the complete outer functional dual gives the exact finite first
-nonconfined cost. Under `N >= 2` and `d(O^perp) > r + 1`, this reduces in
-recovered dimension `t` to `r < M_t(D_P,K_P) + d(I^perp)`; below either exact
-threshold, normalized equations and exact helper supports transfer. Restriction
-to a line shows that the rank-one escape cost is the bottleneck for simultaneous
-transfer across every recoverable rank.
-The labelled ordinary coset-support functions compose exactly under repeated
-concatenation. Helper-restriction costs and target images give the
-target-normalized recursion, while the inner-dual distance has a compatible
-two-sector formula. The persistent scalar threshold alone does not determine
-the next-level cost.
+Its relative generalized Hamming weights are exactly the minimum helper-union
+costs for recovering independent target combinations. For every fixed nonzero
+target-message subspace, prescribed-coset optimization over the complete outer
+functional dual gives the exact finite first nonconfined cost. The labelled
+costs compose associatively through compatible finite concatenation towers and
+retain coefficient-level witnesses. Under `N >= 2` and
+`d(O^perp) > r + 1`, confinement through radius `r` is equivalent to
+`r < M_t(D_P,K_P) + d(I^perp)`. ERGO-Comp turns these formulas into an exact
+hierarchical optimizer and capacity-aware repair scheduler.
 
-> *Abstract* Let `I <= F_q^E`, let `P` be a target set, and put
-> `J = E \ P`. Shortening and puncturing `I^perp` onto `J` give a nested pair
-> `K_P <= D_P <= F_q^J`. Its relative generalized Hamming weight
-> `M_t(D_P,K_P)` is the minimum helper union recovering `t` independent target
-> combinations. For a fixed nonzero target-message subspace and an outer code
-> with at least two blocks and nonzero projection onto the target block, we
-> express the exact least helper union of a nonconfined recovery system as an
-> optimization of prescribed-coset support costs over the complete outer
-> functional dual. This requires no outer-distance gate. If `O <= L^N` is
-> `L`-linear, `N >= 2`, and `d(O^perp) > r + 1`, its criterion reduces in
-> recovered dimension `t` to `r < M_t(D_P,K_P) + d(I^perp)`. Below either
-> exact threshold, zero-extension preserves normalized equations and exact
-> supports. The one-coordinate specialization recovers the weighted coset
-> formula, and a single-parity-check family transfers beyond the ordinary
-> outer support-distance gate.
->
-> Positive-density and bounded service-rate transfer follow. Equal
-> relative-weight hierarchies need not determine bounded repair reliability,
-> and ambient inner-dual realizations of one nested pair can have different
-> confinement thresholds. A projective-simplex family gives a non-MDS
-> hierarchy and projective-rank reliability.
+> *Abstract* Let `I <= F_q^E` have target/helper split `E = P ⊔ J`.
+> Shortening and puncturing `I^perp` onto `J` give `K_P <= D_P`, whose `t`th
+> relative generalized Hamming weight is the exact minimum helper union for
+> `t` independent target combinations. For a fixed nonzero target-message
+> subspace and outer code `O` with at least two blocks and nonzero target-block
+> projection, the first nonconfined helper cost is the minimum prescribed-coset
+> support cost over the complete outer functional dual, with no distance
+> hypothesis. These labelled costs compose by min--sum substitution through
+> compatible finite towers and retain coefficient witnesses. Under
+> `d(O^perp) > r + 1`, confinement through radius `r` is equivalent to
+> `r < M_t(D_P,K_P) + d(I^perp)`; then zero-extension preserves normalized
+> equations and supports. ERGO-Comp (Exact Recovery and Generalized-weight
+> Optimization Compiler) implements this recursion and exact capacity-aware
+> scheduling via quotient states and graded load shells. Recorded structured
+> instances show 2.5--373-fold speedups over equivalently preprocessed CP-SAT;
+> general side constraints use it as a certified CP-SAT front end.
+> Positive-density and bounded service-rate transfer follow, while equal
+> relative-weight hierarchies need not determine bounded repair reliability.
 
 **Delivers.** The associated nested code pair and its exact relative-weight
 interpretation; an exact ungated arbitrary-rank prescribed-coset theorem;
@@ -768,14 +755,16 @@ finite and eventual rank-stratified confinement after the outer-distance gate;
 best-target generalized-weight and cooperative-locality consequences; an MDS
 staircase and rigidity theorem; positive-density and bounded service-rate
 transfer; reliability and coefficient-sensitive separations; and explicit
-projective-simplex formulas; and exact min-sum composition through finite
-concatenation towers. The paper-local Lean companion proves the
+projective-simplex formulas; exact min--sum composition through finite
+concatenation towers; and ERGO-Comp's witness-retaining hierarchical optimizer
+and exact capacitated scheduler. The paper-local Lean companion proves the
 associated exact sequence only; the stronger results are human-proved and
 explicitly marked absent from Lean coverage.
 
 **Who cares.** Coding theorists working on locally recoverable and cooperative
 codes, distributed storage, concatenation, generalized Hamming weights,
-service rate, or stochastic repair reliability.
+service rate, or stochastic repair reliability; and optimization practitioners
+solving structured helper-selection and repair-scheduling problems.
 
 **Why it matters.** Relative weights give the zero-functional numerical spine
 of bounded linear recovery, while exact finite transfer also depends on the
@@ -785,6 +774,8 @@ arbitrary-rank optimization and shows when its coarser RGHW specialization
 transports normalized equations and exact supports. The same labelled cost
 data, augmented by target images for normalized demands, can be reused at the
 next concatenation level without collapsing to a distance-only bound.
+ERGO-Comp compiles that algebraic state before specialized dynamic programming
+or CP-SAT, preserving exact costs, witnesses, and confinement thresholds.
 
 ---
 
